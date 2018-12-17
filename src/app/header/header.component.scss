@@ -1,0 +1,49 @@
+@import "../SharedStyle.scss";
+
+//Header
+header
+{
+    top:0;
+    z-index: 1;
+    nav{
+        .navbar-nav , .nav-item
+        {
+            display: inline-block;
+            font-family: $fontKaushan;
+        }
+        .nav-item
+        {
+            @media screen and (max-width: 768px) and (min-width:425px)
+            {
+                padding: 0 2.5rem !important;
+            }
+            @media screen and (max-width: 425px)
+            {
+                padding: 0 0.5rem !important;
+            }
+        }
+       
+        // .dropdown-menu
+        // {
+        //     right: 16px;
+        //     left: inherit;
+        // }
+        .navbar-collapse
+        {
+            flex-basis: auto;
+        }
+        .navbar-toggler
+        {
+            border: none;        
+            &:hover
+            {
+                background-color:$main-color !important;
+                transition-duration: 1s;
+            }
+            .times
+            {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@import "../SharedStyle.scss";
+
+main
+{
+    #sec-home
+    {
+        .sec-home-bg
+        {
+             background :
+            {
+                image: url(../../assets/1.jpg);
+                position: top;
+                size:cover;
+            }
+            height: 100vh;
+            width: 50%;
+            filter: brightness(102%);
+        }
+        
+        article
+        {
+            position: absolute;
+            height:270px;
+            left: 0;
+            color: $title-first-sec;
+            
+           h1{
+               font-size: 3.5rem;
+               font-family:$fontRaleway;
+               @media screen and (max-width: 768px) {  
+               font-size:2.2rem;
+              }
+              @media screen and (max-width: 375px) { 
+                font-size:1.8rem;
+              }
+            }
+          
+           p
+           {            
+            &:first-of-type
+            {
+             font-family: $fontKaushan;
+            }
+            &:nth-of-type(2)
+            {
+              width: 56%;
+              color:#656e77;
+              font: 
+                {
+                    family: $fontLato;
+                    size: 14px;
+                    weight: 600;
+                }
+            }
+           
+           }
+             
+            .btn
+            {
+                @extend %btn;
+                background-color: $white-color;
+                box-shadow: $box-shadow;
+                &:hover{background-color: $main-color;}
+                
+                // @media only screen and(max-width:786px)
+                // {
+                //     &{width: 100% !important;}
+                // }
+            }  
+        }
+       
+    }
+}

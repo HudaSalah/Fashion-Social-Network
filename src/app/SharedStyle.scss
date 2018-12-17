@@ -1,0 +1,117 @@
+//variavles
+$fontKaushan: 'Kaushan Script', cursive;
+$fontRaleway: 'Raleway', sans-serif;
+$fontLato: 'Lato', sans-serif;
+
+//var colors
+$main-color:#fbc26d;
+$sec-color:#eaeaf1;
+$footer-bg-color:#313234;
+$copyright-color:#242424;
+$white-color:#fefefe;
+$title-first-sec:#303133;
+$text-muted:#9da4ab;
+$box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+
+
+%Line-after
+{
+    content: " ";
+    position: absolute;
+    margin: -7px 0;
+    width: 35px;
+    bottom:0;
+    left: 0;
+    border-top: 1px solid $main-color;
+}
+
+%btn
+{
+    background-color:$main-color;
+    font-family: $fontRaleway;
+    font-size: 13px;
+    border-radius: 0;
+        &:focus{
+                border-color: $main-color;
+                box-shadow:$box-shadow;
+            }
+}
+
+//footer
+%footer
+{
+    background-color: $footer-bg-color;
+    article.aboutDetail
+    {
+        color:$white-color;
+          h4 {
+            font: {
+                   family:$fontRaleway;
+                    size: 16px;
+                 }
+            
+            position: relative;
+              margin-bottom: 22px;
+            
+             &:after
+                {
+                 @extend %Line-after;   
+                }
+        }
+        
+        p{
+            font: {
+                size:12px;
+                family:$fontLato;
+            }
+            
+            i{margin-right: 17px;font-size: 14px;
+            &:hover{
+                color: $main-color;cursor: pointer;transition-duration: 0.5s;}
+            }
+        }
+        
+        table{
+            img{width: 60px;margin: 2px; cursor: pointer;}
+        }
+        
+        table.Aboutus
+        {
+            img{width: 40px;margin: 7px; cursor: pointer;}
+            td{
+                margin-left: 2px;
+                p{
+                    margin:8px;
+                    
+                    &:first-child
+                    {
+                        font-family:$fontRaleway; 
+                        font-size: 10px;
+                        margin-top: -3px;
+                    }
+                    &:nth-child(2)
+                    {
+                        font-size: 9px;
+                    }
+                }
+                
+            }
+        }
+       
+    }
+    
+    .copy
+    {
+        height: 60px;
+        background-color: $copyright-color;
+        p{
+            margin: 0;
+            font-size: 11px;
+            font-family:$fontRaleway;
+            color:gray;
+            span{
+                color: $main-color;
+            }
+        }
+    }
+}
