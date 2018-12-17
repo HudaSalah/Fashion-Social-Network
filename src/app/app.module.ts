@@ -4,7 +4,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; // ng bootstrap
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee , faTimes , faBars} from '@fortawesome/free-solid-svg-icons';
+import { faCoffee , faTimes , faBars , faMapMarkerAlt , faPhone , faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 //new component
 import { AppComponent } from './app.component';
@@ -35,6 +35,6 @@ import { MenCatComponent } from './home/men-cat/men-cat.component';
 export class AppModule {
   constructor() {
     // Add an icon to the library for convenient access in other components
-    library.add(faCoffee, faTimes , faBars);
+    library.add(faCoffee, faTimes , faBars, faMapMarkerAlt , faPhone , faEnvelope);
   }
  }

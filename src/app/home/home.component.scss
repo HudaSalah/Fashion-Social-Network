@@ -22,6 +22,7 @@ main
             position: absolute;
             height:270px;
             left: 0;
+            top: 0;
             color: $title-first-sec;
             
            h1{
@@ -67,6 +68,11 @@ main
                 //     &{width: 100% !important;}
                 // }
             }  
+        }
+
+        .clearFix
+        {
+            clear: both;
         }
        
     }
