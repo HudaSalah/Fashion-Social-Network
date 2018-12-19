@@ -1,0 +1,56 @@
+
+    <div class="col-sm-4 col-xs-12">
+       <ng-template  ngFor let-model let-i="index" [ngForOf]="ModelData">
+        <figure class="position-relative my-5" *ngIf="i<3">
+            <img class="w-100" src= {{model.Img}} />
+            <div class="overlay w-100 h-100 position-absolute text-uppercase text-center">
+              <h5 class="position-absolute">{{model.Name}} </h5>
+              <div class="info position-absolute text-right">
+                <span>followers</span>
+                <fa-icon [icon]="['fas', 'window-minimize']"></fa-icon><span>{{model.followers}}</span>
+                <br />
+                <span>items</span>
+                <fa-icon [icon]="['fas', 'window-minimize']"></fa-icon><span>{{model.itemsCount}}</span>
+              </div>
+            </div>
+          </figure>
+       </ng-template>
+      </div>
+
+      <div class="sec-col col-sm-4 col-xs-12">    
+          <ng-template  ngFor let-model let-i="index" [ngForOf]="ModelData">     
+          <figure class="position-relative my-5" *ngIf="i>=3 && i<6">
+              <img class="w-100" src= {{model.Img}} />
+              <div class="overlay w-100 h-100 position-absolute text-uppercase text-center">
+                <h5 class="position-absolute"> {{model.Name}} </h5>
+                <div class="info position-absolute text-right">
+                  <span>followers</span>
+                  <fa-icon [icon]="['fas', 'window-minimize']"></fa-icon><span>{{model.followers}}</span>
+                  <br />
+                  <span>items</span>
+                  <fa-icon [icon]="['fas', 'window-minimize']"></fa-icon><span>{{model.itemsCount}}</span>
+                </div>
+              </div>
+            </figure></ng-template>
+      </div>
+
+      <div class="th-col col-sm-4 col-xs-12">
+          <ng-template  ngFor let-model let-i="index" [ngForOf]="ModelData">
+          <figure class="position-relative my-5" *ngIf="i>=6">
+              <img class="w-100" src= {{model.Img}} />
+              <div class="overlay w-100 h-100 position-absolute text-uppercase text-center">
+                <h5 class="position-absolute"> {{model.Name}} </h5>
+                <div class="info position-absolute text-right">
+                  <span>followers</span>
+                  <fa-icon [icon]="['fas', 'window-minimize']"></fa-icon><span>{{model.followers}}</span>
+                  <br />
+                  <span>items</span>
+                  <fa-icon [icon]="['fas', 'window-minimize']"></fa-icon><span>{{model.itemsCount}}</span>
+                </div>
+              </div>
+            </figure>
+            </ng-template>
+      </div>
+
+
+

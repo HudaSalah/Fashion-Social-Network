@@ -1,0 +1,300 @@
+@import "../SharedStyle.scss";
+
+
+/*=========== Model's profile =============*/
+#Model-profile {
+  @extend %models-common;
+
+  #leftAside {
+    background-color: $white-color;
+    border-radius: 27px 0 0 27px;
+
+    .Model-name {
+      @extend %Model-name;
+    }
+
+    ul {
+      list-style: none;
+
+      font: {
+        family: $fontLato;
+        size: 12px;
+        weight: 600;
+      }
+
+      li {
+
+        .ng-fa-icon,
+        span:nth-of-type(2) {
+          color: $text-muted;
+          // .svg-inline--fa
+          // {
+          // height:7px !important;
+          // }
+        }
+      }
+    }
+
+    @media screen and (max-width:425px) {
+      display: none !important;
+    }
+  }
+
+  #Model-explo {
+    font-family: $fontStaatliches;
+    background-color: $splited-color;
+    border-radius: 0 27px 27px 0;
+    overflow: hidden;
+
+    @media screen and (max-width: 425px) {
+      overflow: auto;
+      border-radius: 27px;
+    }
+
+
+    /*first slider*/
+    &>div {
+      overflow: hidden;
+    }
+
+    .Model-pic {
+      background: {
+        image: url("../../assets/10.jpg");
+        size: cover;
+        position: top;
+      }
+
+    }
+
+    .Model-name-mobile {
+      bottom: 0;
+      left: 0;
+      display: none;
+
+      h1 {
+        @extend %Model-name;
+        color: $white-color;
+        font-size: 50px;
+      }
+
+      @media screen and (max-width:425px) {
+        display: block;
+      }
+    }
+
+    .Model--show {
+      background-color: $splited-color;
+      border-radius: 0 27px 27px 0;
+      transition-duration: 4s;
+      cursor: pointer;
+
+      .Model-sectit {
+        color: $text-muted;
+        font-size: 50px;
+      }
+
+      span {
+        position: relative;
+        font-size: 12px;
+
+        &::after {
+          content: " ";
+          position: absolute;
+          top: 7px;
+          margin-left: 7px;
+          border-top: 1px solid black;
+          width: 9vw;
+        }
+      }
+
+      .ng-fa-icon {
+        width: fit-content;
+        position: absolute;
+        bottom: 37.8%;
+        right: 34%;
+        font-size: 9px;
+
+        @media screen and (max-width: 1024px) and (min-width:768px) {
+          bottom: 35.6%;
+        }
+
+        @media screen and (max-width:768px) and (min-width:425px) {
+          bottom: 39.1%;
+          right: 20%;
+        }
+      }
+
+      @media screen and (max-width:425px) {
+        display: none !important;
+      }
+    }
+
+
+    /*second slider*/
+    .model-item1,
+    .model-item2,
+    .model-item3,
+    .model-item4,
+    .model-item5,
+    .model-item6,
+    .model-item7,
+    .model-item8,
+    .model-item9,
+    .model-item10 {
+      @extend %model-item;
+    }
+
+    .model-item1 {
+      background-image: url("../../assets/sliderImg/13.jpg");
+    }
+
+    .model-item2 {
+      background-image: url("../../assets/sliderImg/14.jpg");
+      margin-top: 5rem !important;
+    }
+
+    .model-item3 {
+      background-image: url("../../assets/sliderImg/17.jpg");
+      margin-top: 10rem !important;
+    }
+
+    .model-item4 {
+      background-image: url("../../assets/sliderImg/19.jpg");
+      margin-top: 5rem !important;
+    }
+
+    .model-item5 {
+      background-image: url("../../assets/sliderImg/12.jpg");
+      margin-top: 10rem !important;
+    }
+
+    .model-item6 {
+      background-image: url("../../assets/sliderImg/16.jpg");
+    }
+
+    .model-item7 {
+      background-image: url("../../assets/sliderImg/20.jpg");
+    }
+
+    .model-item8 {
+      background-image: url("../../assets/sliderImg/18.jpg");
+    }
+
+    .model-item9 {
+      background-image: url("../../assets/sliderImg/23.jpg");
+    }
+
+    .model-item10 {
+      background-image: url("../../assets/sliderImg/22.jpg");
+    }
+
+    /*third slider */
+
+    /*static button*/
+    .follow-btn {
+      @extend %follow-btn;
+    }
+
+    /*style for slider*/
+    #model-slider {
+      .carousel-control {
+        &-next {
+          right: 33%;
+        }
+
+        &-prev,
+        &-next {
+          align-items: unset;
+          bottom: auto;
+        }
+
+        &-prev-icon,
+        &-next-icon {
+          background-image: none;
+          font-family: $fontStaatliches;
+          font-size: 13px;
+          color: black;
+        }
+
+      }
+    }
+
+
+  }
+}
+
+
+/*======= for pop up screen show product========*/
+
+#zoomTo-profile {
+  @extend %models-common;
+
+  #Item-explo {
+    background: {
+        image: url("../../assets/11.jpg");
+        size: cover;
+        position: center;
+      }
+      border-radius: 27px 0 0 27px;
+      .info
+      {
+        right: 0;  
+        @extend %info-back-btn;      
+      }
+
+      .back
+      {
+        left: 0;
+        @extend %info-back-btn;
+      }
+
+      .overlay
+      {
+          display: none;
+        font-family: $fontStaatliches;
+        transition-duration: 0.5s;
+        font-size: 30px;
+          top: 0;
+          left: 0;
+          background-color: rgba(0, 0, 0, 0.94);
+          opacity: 0.9;          
+          border-radius: 27px 0 0 27px;
+
+          .det-title
+          {
+              color: #5f5a5a;
+              font-size: 13px;
+              width: inherit;
+          }
+          .close
+          {
+            color: #5f5a5a;
+            font-size: 30px;
+            width: inherit;
+            &:hover
+            {
+                color: $main-color;
+            }
+          }
+          .contacts-info
+          {
+            font-size: 15px;
+            font-family: $fontOswald;
+          }
+      }
+  }
+
+
+#rightAside
+  {
+      .Model-name{
+          @extend %Model-name;
+      }
+    
+  }
+
+  .follow-btn {
+    @extend %follow-btn;
+    background-color: $splited-color;
+  }
+}

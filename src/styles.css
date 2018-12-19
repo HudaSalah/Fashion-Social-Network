@@ -3,3 +3,14 @@ body{
     font-family:'Raleway', sans-serif;
     box-sizing: border-box;
 }
+
+/* to display font even if no internet connection */
+ @font-face {
+  font-family: "Staatliches";
+  src: url("assets/Fonts/Staatliches-Regular.ttf") format("truetype");
+ }
+
+ @font-face {
+    font-family: "Oswald-SemiBold";
+    src: url("assets/Fonts/Oswald-SemiBold.ttf") format("truetype");
+   }

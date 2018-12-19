@@ -59,14 +59,9 @@ main
             .btn
             {
                 @extend %btn;
-                background-color: $white-color;
+                background-color:$main-color ;
                 box-shadow: $box-shadow;
-                &:hover{background-color: $main-color;}
-                
-                // @media only screen and(max-width:786px)
-                // {
-                //     &{width: 100% !important;}
-                // }
+                &:hover{background-color: $white-color;transition-duration: 1s;}
             }  
         }
 

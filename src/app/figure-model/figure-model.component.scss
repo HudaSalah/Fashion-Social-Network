@@ -1,0 +1,35 @@
+@import "../SharedStyle.scss";
+
+
+.sec-col
+{
+   margin-top: -12%; 
+   @media screen and (max-width:425px){
+    margin-top: 0;
+}
+}
+.th-col
+{
+    margin-top: -5%;
+    @media screen and (max-width:425px){
+        margin-top: 0;
+    }
+}
+figure
+{
+    margin-right: 2rem;
+    @media screen and (max-width:768px) and (min-width:425px)
+    {
+        margin-right: 1rem;
+        h5{
+            font-size: 1rem;
+        }
+    }
+    @media screen and (max-width:425px){
+        margin: 0;
+    }
+}
+.overlay 
+    {
+        @extend %overlayImg;           
+    }

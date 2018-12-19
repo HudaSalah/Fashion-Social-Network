@@ -1,0 +1,51 @@
+[
+    {
+        "Name": "john pearson",
+        "followers": "18k",
+        "itemsCount":"88",
+        "Img": "assets/menCatalogue/2.jpg"
+    },
+    {
+        "Name": "nathan graves",
+        "followers": "8k",
+        "itemsCount":"76",
+        "Img": "assets/menCatalogue/5.jpg"
+    },
+    {
+        "Name": "micheal grifith",
+        "followers": "5k",
+        "itemsCount":"84",
+        "Img": "assets/menCatalogue/6.jpg"
+    },
+    {
+        "Name": "nathan graves",
+        "followers": "12k",
+        "itemsCount":"99",
+        "Img": "assets/menCatalogue/3.jpg"
+    },
+    {
+        "Name": "devin warren",
+        "followers": "11k",
+        "itemsCount":"98",
+        "Img": "assets/menCatalogue/9.jpg"
+    },
+    {
+        "Name": "bill gonzalez",
+        "followers": "7k",
+        "itemsCount":"88",
+        "Img": "assets/menCatalogue/8.jpg"
+    },
+    {
+        "Name": "mike nunez",
+        "followers": "8k",
+        "itemsCount":"170",
+        "Img": "assets/menCatalogue/4.jpg"
+    },
+    {
+        "Name": "blaki oliver",
+        "followers": "4k",
+        "itemsCount":"37",
+        "Img": "assets/menCatalogue/7.jpg"
+    }
+    
+]
