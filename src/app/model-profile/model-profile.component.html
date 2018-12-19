@@ -1,4 +1,10 @@
-<section id="Model-profile" class="p-5">
+<main class="container-fluid p-0">
+
+<section id="Model-profile" class="py-5">
+    <!-- navBar -->
+    <app-header></app-header>
+
+    <!-- content on sec home -->
   <div class="row container h-100 mx-auto p-0">
     <!-- left side -->
     <div id="leftAside" class="d-flex flex-column justify-content-center col-md-3 col-xs-12 pl-5">
@@ -135,73 +141,4 @@
 
   </div>
 </section>
-
-<!--============================= when click on item zoom it=================================  -->
-
-<section id="zoomTo-profile" class="p-5">
-  <div class="row container h-100 mx-auto p-0 position-relative">
-
-    <!-- left content -->
-    <div id="Item-explo" class="position-relative col-md-9 col-xs-12 p-0">
-      <span class="info text-white p-5 position-absolute">INFO</span>
-      <span class="back text-white p-5 position-absolute"><- BACK </span> 
-        
-        <div class="overlay position-absolute col-sm-12 row align-items-center h-100 m-0">
-            <p class="close text-right mb-5 pt-0 pr-5"> X </p>
-          <div class="m-auto w-75">            
-            <div class="row col-md-12">
-              <p class="det-title">COLOR</p>
-              <p class="text-white">WHITE</p>
-            </div>
-            <div class="row col-md-12">
-              <div class="col-md-2 p-0">
-                <p class="det-title ">LENGTH</p>
-                <p class="text-white ">18CM</p>
-              </div>
-              <div class="col-md-2 p-0">
-                <p class="det-title ">DIMENSION</p>
-                <p class="text-white ">4.2 CM</p>
-              </div>
-              <div class="col-md-2 p-0">
-                <p class="det-title ">DORAS</p>
-                <p class="text-white ">1.1 CM</p>
-              </div>
-              <div class="col-md-2 p-0">
-                <p class="det-title ">TROUS</p>
-                <p class="text-white ">2 CM </p>
-              </div>
-            </div>
-            <div class="row col-md-12">
-              <p class="det-title ">MATERIALS</p>
-              <p class="text-white ">DIAMOND , STANGRAY , STANLESS STEAL</p>
-            </div>
-
-            <div class="row col-md-12 mt-3">
-                <p class="det-title ">CONTACTS</p>
-                <p class="text-white contacts-info"> 
-                  <span class="pr-3">FACEBOOK</span> <span class="pr-3">TWITTER</span> <span class="pr-3">E-MAIL</span> <span class="pr-3">INSTGRAM</span>
-                </p>
-              </div>
-          </div>
-    </div>
-  </div>
-
-  <!-- end left content -->
-
-
-  <!-- right side -->
-  <div id="rightAside" class="d-flex flex-column justify-content-center col-md-3 col-xs-12 pl-4 pr-5">
-    <h2 class="Model-name text-uppercase pb-2">clue diamond watch</h2>
-    <h4 class="text-uppercase pt-2 mt-3">$260.273</h4>
-
-  </div>
-  <!-- end right side -->
-  <div class="follow-btn position-absolute">
-    <span>ADD TO MY FAVOURIT<fa-icon [icon]="['fas', 'window-minimize']"></fa-icon></span><span class="pr-5">17</span>
-    <span class="pl-5 btn-follow">
-      <fa-icon [icon]="['fas', 'plus']"></fa-icon>
-    </span>
-  </div>
-
-  </div>
-</section>
+</main>

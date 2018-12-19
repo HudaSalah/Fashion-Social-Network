@@ -1,6 +1,6 @@
 
     <div class="col-sm-4 col-xs-12">
-       <ng-template  ngFor let-model let-i="index" [ngForOf]="ModelData">
+       <ng-template  ngFor let-model let-i="index" [ngForOf]="ModelData" >
         <figure class="position-relative my-5" *ngIf="i<3">
             <img class="w-100" src= {{model.Img}} />
             <div class="overlay w-100 h-100 position-absolute text-uppercase text-center">

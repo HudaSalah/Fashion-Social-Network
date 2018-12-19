@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http'; //for service
-
+import { RouterModule, Routes } from '@angular/router';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; // ng bootstrap
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -19,6 +19,18 @@ import { MenCatComponent } from './home/men-cat/men-cat.component';
 import { FigureModelComponent } from './figure-model/figure-model.component';
 import { GetModelDataService } from './get-model-data.service';
 import { ModelProfileComponent } from './model-profile/model-profile.component'; //for import my service
+import { ItemPageComponent } from './item-page/item-page.component';
+
+
+//for routes
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'Home', component: HomeComponent },
+  { path: 'Gallery', component: MenCatComponent },
+  { path: 'ModelProfile', component: ModelProfileComponent },
+  { path: 'ItemPage', component: ItemPageComponent }
+];
+
 
 @NgModule({
   declarations: [
@@ -29,11 +41,13 @@ import { ModelProfileComponent } from './model-profile/model-profile.component';
     WomenCatComponent,
     MenCatComponent,
     FigureModelComponent,
-    ModelProfileComponent
+    ModelProfileComponent,
+    ItemPageComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    RouterModule.forRoot(routes),
     NgbModule.forRoot(),
     FontAwesomeModule,
     AngularFontAwesomeModule

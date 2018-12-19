@@ -11,23 +11,6 @@ export class ModelProfileComponent implements OnInit {
 
   ngOnInit() {
   
-    $(".info").on("click",function(){
-
-      $(".overlay").removeClass("animated fadeOut");
-      $(".overlay").addClass("animated fadeIn");
-      $(".overlay").css("display","flex");
-    
-    });
-
-    $(".close").on("click",function(){
-
-      $(".overlay").removeClass("animated fadeIn");
-      $(".overlay").addClass("animated fadeOut");
-      $(".overlay").css("display","none");
-      
-     
-    
-    });
 
     // $(".Model--show").one("click", function() {
     //   debugger;
